@@ -66,27 +66,37 @@ const Contact = () => {
                 <div className="mt-8 pt-6 border-t border-border">
                   <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
                   <div className="flex gap-4">
-                    <a
-                      href="#"
+                    <motion.a
+                      href="https://github.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-3 rounded-xl bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
                       aria-label="GitHub"
+                      whileHover={{ scale: 1.15, rotate: -5 }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Github className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="#"
+                    </motion.a>
+                    <motion.a
+                      href="https://www.linkedin.com/in/khyati-agrawal-1840ba377"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-3 rounded-xl bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
                       aria-label="LinkedIn"
+                      whileHover={{ scale: 1.15, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Linkedin className="w-5 h-5" />
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a
                       href="mailto:khyatiagrawal9494@gmail.com"
                       className="p-3 rounded-xl bg-muted/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
                       aria-label="Email"
+                      whileHover={{ scale: 1.15, rotate: -5 }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       <Mail className="w-5 h-5" />
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
               </div>
